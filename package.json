@@ -1,0 +1,24 @@
+{
+  "name": "hongkong-bus-arrival-api",
+  "description": "hongkong-bus-arrival-api",
+  "main": "index.js",
+  "private": true,
+  "version": "1.0.0",
+  "author": "Donald Wu <yeukfei02@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "itty-router": "^2.1.9",
+    "node-fetch": "^2.6.1",
+    "serverless-cloudflare-workers": "^1.2.0"
+  },
+  "devDependencies": {
+    "git-cz": "^4.7.6",
+    "prettier": "^1.17.0",
+    "standard-version": "^9.3.0"
+  },
+  "scripts": {
+    "format": "prettier --write '**/*.{js,css,json,md}'",
+    "commit": "git-cz",
+    "release": "standard-version"
+  }
+}
