@@ -8,6 +8,8 @@ Hong Kong Bus Arrival Api
 
 - The Kowloon Motor Bus Company (1933) Limited
 
+- Long Win Bus Company Limited (LWB)
+
 documentation: <https://documenter.getpostman.com/view/3827865/TzRVfmYD>
 
 api url: <https://hongkong-bus-arrival-api.yeukfei02.workers.dev/>
