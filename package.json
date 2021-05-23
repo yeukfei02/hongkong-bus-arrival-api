@@ -3,7 +3,7 @@
   "description": "hongkong-bus-arrival-api",
   "main": "index.js",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "Donald Wu <yeukfei02@gmail.com>",
   "license": "MIT",
   "dependencies": {

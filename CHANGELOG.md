@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/yeukfei02/hongkong-bus-arrival-api/compare/v1.1.0...v1.2.0) (2021-05-23)
+
+
+### Features
+
+* 🎸 add kmb route ([10aa46b](https://github.com/yeukfei02/hongkong-bus-arrival-api/commit/10aa46b4352ce989d3ee48f4fa9bbb893e3e39a0))
+
 ## 1.1.0 (2021-05-14)
 
 
