@@ -1,6 +1,12 @@
 # hongkong-bus-arrival-api
 
-hongkong bus arrival api, only New World First Bus Services Limited and Citybus Limited
+Hong Kong Bus Arrival Api
+
+- New World First Bus Services Limited
+
+- Citybus Limited
+
+- The Kowloon Motor Bus Company (1933) Limited
 
 documentation: <https://documenter.getpostman.com/view/3827865/TzRVfmYD>
 
