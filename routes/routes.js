@@ -5,6 +5,8 @@ import { getBusRouteStop } from '../api/nwfbOrCtb/busRouteStop';
 import { getBusStop } from '../api/nwfbOrCtb/busStop';
 import { getEstimateTimeArrival } from '../api/nwfbOrCtb/estimateTimeArrival';
 
+import { getBusRouteListKmb } from '../api/kmb/busRouteList';
+import { getBusStopListKmb } from '../api/kmb/busStopList';
 import { getBusRouteKmb } from '../api/kmb/routeKmb';
 import { getBusRouteStopKmb } from '../api/kmb/busRouteStop';
 import { getEstimateTimeArrivalKmb } from '../api/kmb/estimateTimeArrival';
@@ -255,6 +257,50 @@ router.get('/bus-arrival-time', async request => {
 // ----- nwfb/ctb route end -----
 
 // ----- kmb route start -----
+router.get('/kmb/bus-route-list', async request => {
+  let response = null;
+
+  const getBusRouteListKmbResult = await getBusRouteListKmb();
+  console.log('getBusRouteListKmbResult = ', getBusRouteListKmbResult);
+
+  if (getBusRouteListKmbResult) {
+    const data = {
+      message: 'getBusRouteList',
+      busRouteList: getBusRouteListKmbResult.data,
+    };
+    response = new Response(JSON.stringify(data), {
+      headers: {
+        'Content-type': 'application/json',
+      },
+      status: 200,
+    });
+  }
+
+  return response;
+});
+
+router.get('/kmb/bus-stop-list', async request => {
+  let response = null;
+
+  const getBusStopListKmbResult = await getBusStopListKmb();
+  console.log('getBusStopListKmbResult = ', getBusStopListKmbResult);
+
+  if (getBusStopListKmbResult) {
+    const data = {
+      message: 'getBusStopList',
+      busStopList: getBusStopListKmbResult.data,
+    };
+    response = new Response(JSON.stringify(data), {
+      headers: {
+        'Content-type': 'application/json',
+      },
+      status: 200,
+    });
+  }
+
+  return response;
+});
+
 router.get('/kmb/bus-route', async request => {
   let response = null;
 
